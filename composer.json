@@ -1,0 +1,34 @@
+{
+    "name": "xanweb/c5-web-link",
+    "description": "Manage HTML head links to improve page load performance",
+    "keywords": ["concrete5", "concrete5-v8", "link", "psr13", "preload", "prefetch", "prerender", "dns-prefetch", "performance"],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.2",
+        "fig/link-util": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xanweb\\WebLink\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Xanweb\\WebLink\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.3"
+    },
+    "extra" : {
+        "concrete5" : {
+            "providers" : [
+                "Xanweb\\WebLink\\ServiceProvider"
+            ]
+        }
+    },
+    "support": {
+        "source": "https://github.com/xanweb/c5-web-link"
+    }
+}
